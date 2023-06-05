@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* @font-face {
+    font-family: PingFang;
+    src: url(PF.ttf);
+} */
+
+body {
+    font-family: PingFang;
+    background-color: #fffefe;
+}
+a{
+    color: #0067b8;
+}
+.m-width {
+    max-width: 1366px;
+    margin: auto;
+    /* background-color: #d7e6f1; */
+}
+
+.container {
+    background: url(/assets/163background.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 1px solid #3b7ceb;
+    background: #e4f2fc;
+}
+
+.header__flex{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3b7ceb;
+    padding: 0px 40px 20px;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.header__flex a{
+    color: #000;
+}
+
+.header__flex a:hover {
+    color: #3b7ceb;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 140px;
+}
+
+.logo p  {
+    color: #585e6d;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #585e6d;
+    font-size: 14px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 50px 50px 100px;
+}
+
+.login-container {
+    display: flex;
+    gap: 25em;
+    padding: 0px 40px 0px 0px;
+    
+}
+
+.main__h2{
+   padding: 50px ;
+   font-size: 22px;
+   font-weight: 300;
+}
+
+
+
+form {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    padding: 30px 30px 30px;
+    border: 1px solid #dde4f0;
+    
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input[type = text], [type = password] {
+    width: 100%;
+    padding:8px;
+    border-radius: 4px;
+    border: 1px solid #babac0;
+    outline: none;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+form input[type = password] {
+    margin-bottom: 5px;
+}
+
+form input::placeholder {
+    color: #585e6d;
+}
+
+.password:focus{
+    border: 1px solid #0067b8;
+}
+
+.err-msg {
+    text-align: center;
+    margin-top: 10px;
+    color: #ff0000d8;
+}
+
+.email-contianer {
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.email-contianer input:focus{
+    border: 1px solid #0067b8;
+}
+
+
+.email-contianer p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 5;
+    height: 100%; 
+    padding-right: 8px;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #d9d9da;;
+    border-right: 1px solid #d9d9da;;
+    border-bottom: 1px solid #d9d9da;;
+}
+
+.checkbox-container {
+    margin-top: 5%;
+    margin-bottom: 5px;
+}
+
+.submit {
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #4ea6e6;
+    color: #fff;
+    margin-bottom: 10px;
+    height:40px;
+    margin-top: 20px;
+}
+
+.submit__2{
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    border: 1px solid;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 20px;
+    height: 40px;
+    margin-top: 3px;
+    border: 1px solid #babac0;
+
+    display: none;
+}
+
+.submit:hover{
+    border: 1px solid #0067b8 ;
+    color:#0067b8;
+    background: #fff;
+    transition: .4s ease-out;
+}
+
+.reset-container {
+    /* text-align: center; */
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.reset-container a {
+    color: #585e6d;
+}
+
+.qr-code {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    width: 100px;
+
+}
+
+.check{
+    font-size: 13px;
+    opacity: 80%;
+}
+
+.checked__img{
+    width: 20px;
+}
+
+.reset-container_2{
+    display: flex;
+    margin: 9%;
+    gap: 0em 10px;
+    /* margin-bottom: 45%; */
+    opacity: 45%;
+}
+
+.reset-container_2 li {
+    font-size: 14px;
+    margin-bottom:65%;
+}
+
+.first_footer{
+    display: flex;
+    /*margin-top: 30%;*/
+    font-size: 14px;
+    margin-left: 20%;
+    margin-bottom: 3%;
+}
+
+.second_footer{
+    font-size: 10px;
+    margin-left: 13%;
+    -webkit-nbsp-mode: 5%;
+    opacity: 45%;
+}
+
+.footer{
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+    margin-left: 12em;
+        /*margin-top: 30%;*/
+        font-size: 15px;
+        margin-bottom: 8px;
+        color: #585e6d;
+}
+
+.footer_2 {
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+    margin-left: 21em;
+    /*margin-top: 30%;*/
+    font-size: 15px;
+    color: #585e6d;
+    margin-bottom: 10px;
+}
+
+.footer li:hover{
+    color: #0067b8;
+}
+
+.footer_2 li:hover {
+    color: #0067b8;
+}
+
+.footer__mobile{
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+    .check{
+        display: none;
+    }
+    html{
+        overflow: hidden;
+    }
+    .nav-menu, .img-container, .logo-container p, .qr-code, .form-header ,.footer__container{
+        display: none;
+    }
+
+    .submit__2{
+        display: block;
+    }
+    .login-container img{
+        display: none;
+    }
+
+    .main__h2{
+        display: none;
+    }
+    
+    header {
+        justify-content: center;
+        background: #fff;
+        margin-top: 5em;
+        border: none;
+    }
+
+
+
+        .hero-section {
+            padding: 0px ;
+        }
+
+        .header__flex{
+            display: none;
+        }
+
+                form input[type=text],
+                [type=password] {
+                    padding: 12px;
+                    width: 100%;
+                }
+
+    .container {
+        background: #fff;
+    }
+
+    body{
+        background-color: #fff;
+    }
+
+    .logo-container {
+        display: block;
+        margin: auto;
+    }
+
+    .login-container {
+        display: block;
+        margin: auto;
+        position: unset;
+    }
+    
+    form {
+        display: block;
+        /* margin: auto; */
+        /* padding-top: 20px; */
+        box-shadow: unset;
+        border: none;
+        height: 470px;
+    }
+
+
+    .reset-container{
+        display: none;
+
+    }
+
+    .reset-container a {
+        color:#0067b8;
+    }
+
+    .reset-container_2{
+        margin-bottom:0 ;
+    }
+
+        footer {
+            display: none;
+        }
+
+        .footer__mobile{
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            cursor: pointer;
+        }
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        display: none;
+    }
+}
